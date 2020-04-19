@@ -20,31 +20,17 @@ $other-color: rgb(255, 233, 200);
 $input-focus: rgb(172, 255, 248);
 $darken: rgba($color: $black, $alpha: 0.3);
 
-/*BACKGROUNDS*/
-.bg-1{
-    background: $secondary-color-1;
-}
+                                    /*BACKGROUNDS*/
+.bg-1{background: $secondary-color-1;}
+.bg-2{background: $white;}
+.bg-3{background: $black;}
+.bg-other{background: $other-color;}
+.bg-darken{background: $darken;}
 
-.bg-2{
-    background: $white;
-}
-
-.bg-3{
-    background: $black;
-}
-
-.bg-other{
-    background: $other-color;
-}
-
-.bg-darken{
-    background: $darken;
-}
-
-/*RESET*/
+                                    /*RESET*/
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;}
 
-/*SMALLER TEXT FOR MOBILE*/
+                            /*SMALLER TEXT FOR MOBILE*/
 @media (max-width: 700px){:root{font-size: 12px;}}
 
                                 /*CONTAINERS*/
@@ -87,13 +73,5 @@ $darken: rgba($color: $black, $alpha: 0.3);
         background-size: auto 130%;}
         @media (max-width: 750px){.banner{background-size: auto 100%;}} //mobile version
         @media (min-width: 1200px){.banner{background-size: 100%;}}     // big screen version 
-.banner::after{
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: $darken;
-}
+.banner::after{content: "";display: block;position: absolute;top: 0;left: 0;
+        height: 100%;width: 100%;background: $darken;}
