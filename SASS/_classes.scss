@@ -47,6 +47,7 @@ $darken: rgba($color: $black, $alpha: 0.3);
          img{width: 100%;}
           >:last-child{margin-right: 0;}}        //EVEN COLUMNS
 
+.flex-end{display: flex; justify-content: flex-end;} // FLOAT RIGHT
 
 .cols-aside-left{display: flex; 
     >*{margin-top: 20px; margin-bottom: 20px; margin-left: 30px;}
